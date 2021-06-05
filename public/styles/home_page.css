@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    background:#fff;
+    transition:box-shadow 0.5s ease;
+}
+.shadow{
+    box-shadow: 0px 0px 6px 1px black;
+}
+.logo{
+    font-size: 28px;
+    color:var(--primaryTextColor);
+    font-weight: normal;
+}
+.navigationBar{
+    width:95%;
+    height:70px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.linkContainer{
+    display:inline-block;
+    padding: 0em .5em 0em .6em;
+    
+}
+.separator{
+    border-right: 1px solid var(--primaryTextColor);
+}
+
+.link{
+    font-size: 20px;
+    color:var(--primaryTextColor);
+    text-decoration: none;
+}
+
+
