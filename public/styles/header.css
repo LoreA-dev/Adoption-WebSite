@@ -38,7 +38,7 @@ header{
     transition:.3s color ease;
 }
 .link:hover{
-    color:var(--secondaryColor) !important;
+    color:var(--secondaryColor) ;
 
 }
 
