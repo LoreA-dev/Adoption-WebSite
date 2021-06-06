@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-
+app.set('port',process.env.PORT || 3000)
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) =>{
@@ -14,9 +14,9 @@ app.get('/pets', (req, res) =>{
 })
 
 app.get('/animal-cares', (req, res) =>{
-    res.sendFile(path.join(__dirname,'/views/animal_cares.html'))
+    res.sendFile(path.join(__dirname,'/public/views/animal_cares.html'))
 })
 
-app.listen(process.env.PORT || 3000,()=>{
-    console.log("Server on")
+app.listen(app.get('port'),()=>{
+    console.log("Server on port", app.get('port'))
 })

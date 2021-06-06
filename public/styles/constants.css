@@ -1,4 +1,16 @@
+ 
+ *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
  :root{
-    /* --primaryColor: ; */
+    --primaryColor: #FDDA80;
+    --secondaryColor: #E6964A;
     --primaryTextColor:#222222 ;
 } 
+.active{
+    color:var(--secondaryColor) !important;
+}
