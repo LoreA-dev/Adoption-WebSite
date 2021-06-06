@@ -5,7 +5,7 @@ app.set('port',process.env.PORT || 3000)
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) =>{
-    res.sendFile(path.join(__dirname,'public/views/home_page.html'))
+    res.sendFile(path.join(__dirname,'/public/views/home_page.html'))
 })
 
 
