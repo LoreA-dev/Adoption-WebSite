@@ -1,0 +1,7 @@
+main{
+    margin-top: 10vh;
+    height:90vh;
+    width:100%;
+    background-image: url("../images/background.svg");
+    background-size: cover;
+}
