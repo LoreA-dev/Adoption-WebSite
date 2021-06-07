@@ -81,7 +81,7 @@ let blogs = [
   },
 ];
 
-blogs.map(function createBlog(value) {
+blogs.forEach(function createBlog(value) {
   let mainContainer = document.createElement("div");
   mainContainer.classList.add("blogContainer")
   let textContainer = document.createElement('div');
