@@ -1,7 +1,56 @@
-main{
-    margin-top: 10vh;
+
+/* MainContent */
+.mainContent{
     height:90vh;
     width:100%;
+    margin-top: 10vh;
     background-image: url("../images/background.svg");
-    background-size: cover;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.mainContentContainer{
+    display:flex;
+    width:95%;
+    margin:auto;
+    justify-content:space-evenly;
+}
+
+.imageContainer{
+    margin-top: 1rem;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+
+.content{
+    padding-top: 10rem;
+    width:45%;
+}
+
+.textOfContent{
+    font-size: 2.8rem;
+    color:var(--primaryTextColor);
+}
+
+.btn{
+    display:inline-block;
+    color:var(--secondaryColor); 
+    font-size: 2.8rem;
+    font-weight:bold ;
+    text-decoration: none;
+    margin-top:2rem;
+    transition: color .5s ease;
+    transition: background .5s ease;
+    border-radius: .5rem;
+    padding:.5rem 2rem;
+    border:2px solid var(--secondaryColor);
+    
+}
+
+.btn:hover{
+    background: var(--secondaryColor);
+    color:#fff;
+
 }
