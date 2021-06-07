@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: Roboto;
 }
+html{
+    font-size: 62.5%;
+}
 
  :root{
     --primaryColor: #FDDA80;
