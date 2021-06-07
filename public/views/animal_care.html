@@ -4,11 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Home | AnimaLovers</title>
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/constants.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/animal_care.css">
 </head>
 <body>
-    animal cares
+    <Header>
+        <div class="navigationBar">
+            <div class="LogoContainer">
+                <!--<img src="../images/logo.png" alt="Logo" class="logo">-->
+                <h1 class="logo">
+                    AnimaLovers
+                </h1>
+            </div>
+            <nav>
+                <li class='linkContainer separator'>
+                    <a href="/" class="link ">Home</a>
+                </li>
+                <li class='linkContainer separator'>
+                    <a class="link active" >Animal care</a>
+                </li>
+                <li class='linkContainer'>
+                    <a class="link" href="/pets">Pets</a>
+                </li>
+            </nav>
+        </div>
+    </Header>
+    <div id="mainContainer"></div>
+    <script src="../scripts/header.js"></script>
+
+    <script src="../scripts/animal_care.js"></script>
+
 </body>
+
+
 </html>
