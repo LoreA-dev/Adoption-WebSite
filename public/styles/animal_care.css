@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body::-webkit-scrollbar-thumb{
+    background: #888;
+}
+body::-webkit-scrollbar{
+    width: 8.5px;
+}
+#mainContainer{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.blogContainer{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    width: 550px;
+    box-shadow: 0 0 4px 2px seagreen;
+}
+.textContainer{
+    float: right;
+    font-size: 1.4rem;
+    padding: 10px;
+    border: 2px springgreen solid;
+    width: 310px;
+    height: 180px;
+    text-align: justify;
+}
+.images{
+    height: 180px;
+    width: 220px;
+}

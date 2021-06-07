@@ -13,8 +13,8 @@ app.get('/pets', (req, res) =>{
     res.sendFile(path.join(__dirname,'/public/views/pets.html'))
 })
 
-app.get('/animal-cares', (req, res) =>{
-    res.sendFile(path.join(__dirname,'/public/views/animal_cares.html'))
+app.get('/animal-care', (req, res) =>{
+    res.sendFile(path.join(__dirname,'/public/views/animal_care.html'))
 })
 
 app.listen(app.get('port'),()=>{
