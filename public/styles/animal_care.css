@@ -1,19 +1,9 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
-body::-webkit-scrollbar-thumb{
-    background: #888;
-}
-body::-webkit-scrollbar{
-    width: 8.5px;
-}
 #mainContainer{
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
+    margin-top: 10vh;
 }
 .blogContainer{
     display: inline-block;
