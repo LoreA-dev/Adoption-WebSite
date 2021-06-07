@@ -4,14 +4,13 @@ header{
     position: fixed;
     background:#fff;
     transition:box-shadow 0.5s ease;
-    top:0;
-    
+    top:0; 
 }
 .shadow{
     box-shadow: 0px 0px 6px 1px black;
 }
 .logo{
-    font-size: 28px;
+    font-size: 2.8rem;
     color:var(--primaryTextColor);
     font-weight: normal;
 }
@@ -34,7 +33,7 @@ header{
 }
 
 .link{
-    font-size: 20px;
+    font-size: 2rem;
     color:var(--primaryTextColor);
     text-decoration: none;
     transition:.3s color ease;
