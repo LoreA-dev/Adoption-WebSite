@@ -35,7 +35,9 @@
 }
 
 .btn{
-    display:inline-block;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     color:var(--secondaryColor); 
     font-size: 2.8rem;
     font-weight:bold ;
@@ -46,11 +48,15 @@
     border-radius: .5rem;
     padding:.5rem 2rem;
     border:2px solid var(--secondaryColor);
-    
+    width:300px;
 }
 
 .btn:hover{
     background: var(--secondaryColor);
     color:#fff;
 
+}
+
+.btn i {
+    margin-right: 1rem;
 }
