@@ -60,3 +60,30 @@
 .btn i {
     margin-right: 1rem;
 }
+
+.iconButtonContainer{
+    display:flex;
+    justify-content:center;
+}
+.iconButtonContainer i{    
+    font-size: 4.5rem;
+    color:var(--secondaryColor);
+    cursor: pointer;
+    animation-name: scaleIn;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transition:opacity 0.4s ease
+}
+.iconButtonContainer i:hover{
+    opacity:.85;
+}
+@keyframes scaleIn {
+    from {
+      transform:scale(1.2);
+    }
+  
+    to {
+        transform:scale(1);
+    }
+  }
