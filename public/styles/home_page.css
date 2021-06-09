@@ -1,9 +1,8 @@
 
 /* MainContent */
 .mainContent{
-    height:90vh;
+    height:100vh;
     width:100%;
-    margin-top: 10vh;
     background-image: url("../images/background.svg");
     background-size: cover; 
     background-repeat: no-repeat;
