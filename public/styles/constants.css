@@ -1,5 +1,4 @@
- 
- *{
+*{
     padding:0;
     margin:0;
     box-sizing: border-box;
@@ -22,7 +21,11 @@ html{
     --primaryColor: #FDDA80;
     --secondaryColor: #E6964A;
     --primaryTextColor:#222222 ;
+    --secondaryTextColor:#6C563F ;
 } 
+html{
+    font-size: 62.5%;
+}
 .active{
     color:var(--secondaryColor) !important;
 }
