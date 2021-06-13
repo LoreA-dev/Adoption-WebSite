@@ -9,59 +9,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/constants.css">
+    <link rel="stylesheet" href="../styles/floatingActionButton.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/home_page.css">
     <title>Home | AnimaLovers</title>
 </head>
 <body>
-    <Header>
+  <div class="floatingActionButton">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+    <Header id="header">
         <div class="navigationBar">
-            <div class="LogoContainer">
-                <!--<img src="../images/logo.png" alt="Logo" class="logo">-->
-                <h1 class="logo">
-                    AnimaLovers
-                </h1>
+            <div class="logoContainer">
+                <img src="../images/logo.svg" alt="Logo" class="logo">
             </div>
             <nav>
-                <li class='linkContainer separator'>
-                    <a class="link active">Home</a>
+                <li class='linkContainer'>
+                    <a class="link ">Home</a>
+                    <span class="active"></span>
                 </li>
-                <li class='linkContainer separator'>
+                <li class='linkContainer '>
                     <a class="link" href="./animal_care.html">Animal care</a>
+                    <span></span>
                 </li>
                 <li class='linkContainer'>
                     <a class="link" href="./pets.html">Pets</a>
+                    <span></span>
                 </li>
             </nav>
         </div>
 
     </header>
 
-
-    <section class="mainContent">
-      <main class="mainContentContainer">
-        <aside class="imageContainer">
-          <img src="../images/cat.png" alt="Cat Image" />
-          
-        </aside>
-        <article class="content">
-            <p class="textOfContent">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
-              delectus quasi voluptatum. Optio debitis unde quos mollitia
-              placeat na.
-            </p>
-            <a class="btn" href="./pets.html"><i class="fas fa-paw"></i>Let's adopt </a>
-          </div>
-          
-        </article>
-      </main>
-      <div class="iconButtonContainer">
-        <i onclick="slideDown()" class="fas fa-arrow-circle-down"></i>     
-     </div>
-     
-    </section>
-
-
+    <script src="../scripts/floatingActionButton.js"></script>
     <script src="../scripts/home_page.js"></script>
 </body>
 </html>

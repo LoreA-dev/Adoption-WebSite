@@ -1,0 +1,23 @@
+.floatingActionButton{
+    position: fixed; 
+    bottom:-100%;
+    right:2rem;
+    background:var(--primaryColor);
+    width:4rem;
+    height:4rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    clip-path: circle(50% at 50% 50%);
+    transition: bottom 0.7s ease;
+    cursor:pointer;
+    
+}
+.floatingActionButton:hover{
+    opacity: .9;
+}
+
+.floatingActionButton i {
+    font-size: 2.5rem;
+    color: #fff;
+}
