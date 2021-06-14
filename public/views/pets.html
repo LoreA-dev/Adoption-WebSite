@@ -9,10 +9,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/constants.css">
+    <link rel="stylesheet" href="../styles/floatingActionButton.css">
     <link rel="stylesheet" href="../styles/header.css">
 </head>
 <body>
-    <h1>pets</h1>
-    <script src="../scripts/header.js"></script>
+    <div class="floatingActionButton">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+        <Header id="header">
+            <div class="navigationBar">
+                <div class="logoContainer">
+                    <img src="../images/logo.svg" alt="Logo" class="logo">
+                </div>
+                <nav>
+                    <li class='linkContainer'>
+                        <a href="./home_page.html" class="link ">Home</a>
+                        <span ></span>
+                    </li>
+                    <li class='linkContainer '>
+                        <a class="link" href="./animal_care.html">Animal care</a>
+                        <span ></span>
+                    </li>
+                    <li class='linkContainer'>
+                        <a class="link" >Pets</a>
+                        <span class="active"></span>
+                    </li>
+                </nav>
+            </div>
+    
+        </header>
+    <script src="../scripts/floatingActionButton.js"></script>
+
 </body>
 </html>

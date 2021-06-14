@@ -5,6 +5,7 @@
     font-family: Roboto;
 }
 
+
 body::-webkit-scrollbar-thumb{
     background: #888;
 }
@@ -15,11 +16,12 @@ body::-webkit-scrollbar{
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
  :root{
-    --primaryColor: #FDDA80;
-    --secondaryColor: #E6964A;
+    --primaryColor: #222222;
+    --secondaryColor: #20FF97;
     --primaryTextColor:#222222 ;
     --secondaryTextColor:#6C563F ;
 } 
@@ -27,5 +29,5 @@ html{
     font-size: 62.5%;
 }
 .active{
-    color:var(--secondaryColor) !important;
+    background:var(--secondaryColor) !important;
 }
