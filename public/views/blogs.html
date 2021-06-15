@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/constants.css">
+    <link rel="stylesheet" href="../styles/floatingActionButton.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/blogs.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,20 +21,35 @@
 </head>
 
 <body>
-    <Header>
-        <div class="navigationBar">
-            <div class="LogoContainer">
-                <!--<img src="../images/logo.png" alt="Logo" class="logo">-->
-                <h1 class="logo">
-                    AnimaLovers
-                </h1>
+    <div class="floatingActionButton">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+        <Header id="header">
+            <div class="navigationBar">
+                <div class="logoContainer">
+                    <img src="../images/logo.svg" alt="Logo" class="logo">
+                </div>
+                <nav>
+                    <li class='linkContainer'>
+                        <a  href="./home_page.html" class="link ">Home</a>
+                        <span></span>
+                    </li>
+                    <li class='linkContainer '>
+                        <a class="link" >Blogs</a>
+                        <span class="active"></span>
+                    </li>
+                    <li class='linkContainer'>
+                        <a class="link" href="./pets.html">Pets</a>
+                        <span></span>
+                    </li>
+                </nav>
             </div>
             <nav>
                 <li class='linkContainer separator'>
                     <a href="./home_page.html" class="link ">Home</a>
                 </li>
                 <li class='linkContainer separator'>
-                    <a class="link active">Animal care</a>
+                    <a class="link active">Blogs/a>
                 </li>
                 <li class='linkContainer'>
                     <a class="link" href="./pets.html">Pets</a>
@@ -48,6 +64,7 @@
             <i class="far fa-hand-pointer"></i>
         </div>
     </div>
+    <script src="../scripts/floatingActionButton.js"></script>
     <script src="../scripts/header.js"></script>
     <script src="../scripts/blogs.js"></script>
 

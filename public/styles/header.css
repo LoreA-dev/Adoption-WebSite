@@ -8,37 +8,58 @@ header{
 .shadow{
     box-shadow: 0px 0px 6px 1px black;
 }
+.logoContainer{
+    display:flex;
+    align-items:center;
+
+}
+
 .logo{
-    font-size: 2.8rem;
+    width:4rem;
     color:var(--primaryTextColor);
     font-weight: normal;
+    
+}
+nav{
+    margin-left: 3rem;
+
 }
 .navigationBar{
     width:95%;
-    height:10vh;
+    height:6rem;
     margin:auto;
     display:flex;
-    justify-content:space-between;
     align-items:center;
 }
 
 .linkContainer{
     display:inline-block;
     padding: 0em .5em 0em .6em;
-    
+    margin-left: 2rem;
+
 }
-.separator{
-    border-right: 1px solid var(--primaryTextColor);
+span{
+    display: block;margin:auto;
+    width:1rem;
+    height:.4rem;
+    background:  transparent;
+    transition:background .3s ease;
+    border-radius: 3rem;
 }
+
 
 .link{
     font-size: 2rem;
     color:var(--primaryTextColor);
     text-decoration: none;
-    transition:.3s color ease;
+    transition:.3s opacity ease;
+    font-weight: bold;
 }
 .link:hover{
-    color:var(--secondaryColor) ;
+    opacity:.8;
 
+}
+.link:hover ~ span{
+    background:  var(--secondaryColor);
 }
 
