@@ -1,0 +1,54 @@
+:root{
+  --position: absolute;  
+  --z-index-firts: -1;
+  --z-index-second: -2;
+  --bottom: 0;
+}
+
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    height: calc(100vh - 6rem);
+    position: relative;
+}
+.imageContainer{
+    margin: 10px;
+    width: 500px;
+}
+.imageContainer img{
+    width:35rem;
+}
+.contentContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-content: center;
+}
+#textContent{
+    padding: 10px;
+    text-align: justify;
+}
+.waveUp1{
+    position: var(--position);
+    top: -10%;
+    z-index: var(--z-index-firts);
+}
+.waveUp2{
+    position: var(--position);
+    z-index: var(--z-index-second);
+}
+.waveDown1, .waveDown3{
+    position: var(--position);
+    z-index: var(--z-index-firts);
+    bottom: var(--bottom);
+}
+.waveDown2, .waveDown4{
+    position: var(--position);
+    z-index: var(--z-index-second);
+    bottom: var(--bottom);
+}
