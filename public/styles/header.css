@@ -12,18 +12,14 @@ header{
 .logoContainer{
     display:flex;
     align-items:center;
-
 }
-
 .logo{
     width:4rem;
     color:var(--primaryTextColor);
     font-weight: normal;
-    
 }
 nav{
     margin-left: 3rem;
-
 }
 .navigationBar{
     width:95%;
@@ -51,7 +47,7 @@ span{
 
 
 .link{
-    font-size: 2rem;
+    font-size: 1.9rem;
     color:var(--primaryTextColor);
     text-decoration: none;
     transition:.3s opacity ease;
@@ -64,4 +60,12 @@ span{
 .link:hover ~ span{
     background:  var(--secondaryColor);
 }
-
+.waveUp1{
+    position: absolute;
+    top: -5%;
+    z-index: -1;
+}
+.waveUp2{
+    position: absolute;
+    z-index: -2;
+}

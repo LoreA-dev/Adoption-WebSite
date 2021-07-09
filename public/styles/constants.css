@@ -2,7 +2,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: Open Sans;
 }
 
 
@@ -18,12 +18,12 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-
  :root{
-    --primaryColor: #222222;
+    --primaryColor: #ff9786;
     --secondaryColor: #FFDC7C;
-    --primaryTextColor:#fff ;
+    --primaryTextColor:#ffffff ;
     --secondaryTextColor:#6C563F ;
+    --baseColor: rgb(43, 38, 38);
 } 
 html{
     font-size: 62.5%;
