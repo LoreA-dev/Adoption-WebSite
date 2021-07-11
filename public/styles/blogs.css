@@ -126,12 +126,12 @@
     outline: none;
 }
 .waveDown3{
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
+    position: var(--position);    
+    z-index:var( --z-index-first);
+    bottom: var(--bottom);
 }
 .waveDown4{
     position: absolute;
-    z-index: -2;
-    bottom: 0;
+    z-index:var( --z-index-second);
+    bottom: var(--bottom);
 }
