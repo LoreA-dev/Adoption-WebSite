@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import "./navbar.css";
 const Navbar = () => {
+  const [navbarActive, setNavbarActive] = React.useState('home')
   return (
     <header id="header">
       <svg class="waveUp1" viewBox="0 60 760 350" preserveAspectRatio="none">
@@ -17,28 +19,28 @@ const Navbar = () => {
       </svg>
       <div class="navigationBar">
         <div class="logoContainer">
-          <a href="./home_page.html">
+          <Link to="/home" className='link' onClick={()=>setNavbarActive('home')}>
             <img src="./images/logo.svg" alt="Logo" class="logo" />
-          </a>
+          </Link>
         </div>
         <nav>
           <li class="linkContainer">
-            <a href="./home_page.html" class="link ">
+            <Link to="/home" className="link" onClick={()=>setNavbarActive('home')}>
               Home
-            </a>
-            <span></span>
+            </Link>
+            <span className={navbarActive === 'home' ? 'active': ''}></span>
           </li>
           <li class="linkContainer ">
-            <a class="link" href="google.com">
+            <Link className="link" to="/blogs" onClick={()=>setNavbarActive('blogs')}>
               Blogs
-            </a>
-            <span class="active"></span>
+            </Link>
+            <span className={navbarActive === 'blogs' ? 'active': ''}></span>
           </li>
           <li class="linkContainer">
-            <a class="link" href="./pets.html">
+            <Link className="link"  to="/pets" onClick={()=>setNavbarActive('pets')}>
               Pets
-            </a>
-            <span></span>
+            </Link>
+            <span className={navbarActive === 'pets' ? 'active': ''}></span>
           </li>
         </nav>
       </div>

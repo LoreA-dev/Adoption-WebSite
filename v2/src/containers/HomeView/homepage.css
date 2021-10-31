@@ -138,3 +138,13 @@
 #textInsideRequirements{
     padding: 5px;
 }
+.waveDown3{
+    position: var(--position);
+    z-index: var(--z-index-first);
+    bottom: var(--bottom);
+}
+.waveDown4{
+    position: var(--position);
+    z-index: var(--z-index-second);
+    bottom: var(--bottom);
+}
