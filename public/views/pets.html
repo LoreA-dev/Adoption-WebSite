@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +9,201 @@
     <meta name="description" content="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../styles/constants.css">
     <link rel="stylesheet" href="../styles/floatingActionButton.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/pets.css">
 </head>
+
 <body>
     <div class="floatingActionButton">
         <i class="fas fa-arrow-up"></i>
-      </div>
-      <svg class="waveUp1" viewBox="0 60 760 350" preserveAspectRatio="none"><path d="M-0.27,144.56 C72.51,101.14 280.76,159.38 173.53,-0.48 L256.49,0.50 L0.00,0.00 Z" style="fill: #ff9786;"></path></svg>
-      <svg class="waveUp2" viewBox="40 -10 550 150" preserveAspectRatio="none"><path d="M-2.54,44.89 C89.45,37.00 216.98,68.58 172.96,-5.42 L172.40,-4.44 L0.00,0.00 Z" style="fill: #FFDC7C;"></path></svg>
-        <Header id="header">
-            <div class="navigationBar">
-                <div class="logoContainer">
-                    <a href="/"><img src="../images/logo.svg" alt="Logo" class="logo"></a>
-                </div>
-                <nav>
-                    <li class='linkContainer'>
-                        <a href="/" class="link ">Home</a>
-                        <span ></span>
-                    </li>
-                    <li class='linkContainer '>
-                        <a class="link" href="/animal-care">Animal care</a>
-                        <span ></span>
-                    </li>
-                    <li class='linkContainer'>
-                        <a class="link" >Pets</a>
-                        <span class="active"></span>
-                    </li>
-                </nav>
+    </div>
+    <Header id="header">
+        <svg class="waveUp1" viewBox="0 60 760 350" preserveAspectRatio="none">
+            <path d="M-0.27,144.56 C72.51,101.14 280.76,159.38 173.53,-0.48 L256.49,0.50 L0.00,0.00 Z"
+                style="fill: #ff9786;"></path>
+        </svg>
+        <svg class="waveUp2" viewBox="40 -20 550 150" preserveAspectRatio="none">
+            <path d="M-2.54,44.89 C89.45,37.00 216.98,68.58 172.96,-5.42 L172.40,-4.44 L0.00,0.00 Z"
+                style="fill: #FFDC7C;"></path>
+        </svg>
+        <div class="navigationBar">
+            <div class="logoContainer">
+                <a href="./home_page.html"><img src="../images/logo.svg" alt="Logo" class="logo"></a>
             </div>
-    
-        </header>
+            <nav>
+                <li class='linkContainer'>
+                    <a href="./home_page.html" class="link ">Home</a>
+                    <span></span>
+                </li>
+                <li class='linkContainer '>
+                    <a class="link" href="./blogs.html">Blogs</a>
+                    <span></span>
+                </li>
+                <li class='linkContainer'>
+                    <a class="link">Pets</a>
+                    <span class="active"></span>
+                </li>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <div id="mainContainer">
+            <div id="petsContainer">
+                <div id="petsCardContainer">
+                    <div class="petCard">
+                        <div class="petCardImage">
+                            <i class="fas fa-heart favoriteIcon"></i>
+                            <img src="https://i.blogs.es/6d8ceb/image-2020-11-19-11-45-33/450_1000.jpg" alt="Cat"
+                                class="petImage">
+                        </div>
+                        <div class="petCardContent">
+                            <h2 class="petCardTitle">
+                                Shira <i class="fas fa-venus genderWomanIcon"></i>
+                            </h2>
+                            <p class="petCardDescriptionAge">
+                                1 year
+                            </p>
+                            <p class="petCardDescriptionBreed">
+                                Criollo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="petCard">
+                        <div class="petCardImage">
+                            <i class="fas fa-heart favoriteIcon"></i>
+                            <img src="https://i.pinimg.com/736x/9d/4d/85/9d4d85fcb580025959b10098ac1148f2.jpg" alt="Cat"
+                                class="petImage">
+                                
+                        </div>
+                        <div class="petCardContent">
+                            <h2 class="petCardTitle">
+                                Appa <i class="fas fa-mars genderMaleIcon"></i>
+                            </h2>
+                            <p class="petCardDescriptionAge">
+                                1 year
+                            </p>
+                            <p class="petCardDescriptionBreed">
+                                Criollo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="petCard">
+                        <div class="petCardImage">
+                            <i class="fas fa-heart favoriteIcon"></i>
+                            <img src="https://www.ecestaticos.com/image/clipping/4eb2fe1b771826cf037b432e11352dea/la-curiosa-historia-del-perro-que-ayudo-a-una-mujer-enferma-a-volver-a-mover-el-brazo.jpg" alt="Cat"
+                                class="petImage">
+                        </div>
+                        <div class="petCardContent">
+                            <h2 class="petCardTitle">
+                                Sonia <i class="fas fa-venus genderFemaleIcon"></i>
+                            </h2>
+                            <p class="petCardDescriptionAge">
+                                1 year
+                            </p>
+                            <p class="petCardDescriptionBreed">
+                                Criollo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="petCard">
+                        <div class="petCardImage">
+                            <i class="fas fa-heart favoriteIcon"></i>
+                            <img src="https://www.ciudaddemascotas.com/pub/media/wysiwyg/10_5.png" alt="Cat"
+                                class="petImage">
+                        </div>
+                        <div class="petCardContent">
+                            <h2 class="petCardTitle">
+                                Nieve <i class="fas fa-venus genderFemaleIcon"></i>
+                            </h2>
+                            <p class="petCardDescriptionAge">
+                                1 year
+                            </p>
+                            <p class="petCardDescriptionBreed">
+                                Criollo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="petCard">
+                        <div class="petCardImage">
+                            <i class="fas fa-heart favoriteIcon"></i>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Oryctolagus_cuniculus_Tasmania_2.jpg/1200px-Oryctolagus_cuniculus_Tasmania_2.jpg" alt="Cat"
+                                class="petImage">
+                        </div>
+                        <div class="petCardContent">
+                            <h2 class="petCardTitle">
+                                Zeus <i class="fas fa-mars genderMaleIcon"></i>
+                            </h2>
+                            <p class="petCardDescriptionAge">
+                                1 year
+                            </p>
+                            <p class="petCardDescriptionBreed">
+                                Criollo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="petCard">
+                        <div class="petCardImage">
+                            <img src="https://i.pinimg.com/736x/9d/4d/85/9d4d85fcb580025959b10098ac1148f2.jpg" alt="Cat"
+                                class="petImage">
+                        </div>
+                        <div class="petCardContent">
+                            <h2 class="petCardTitle">
+                                Appa <i class="fas fa-mars genderMaleIcon"></i>
+                            </h2>
+                            <p class="petCardDescriptionAge">
+                                1 year
+                            </p>
+                            <p class="petCardDescriptionBreed">
+                                Criollo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="petCard">
+                        <div class="petCardImage">
+                            <i class="fas fa-heart favoriteIcon"></i>
+                            <img src="https://misanimales.com/wp-content/uploads/2018/07/perfiles-de-instagram-sobre-gatos.jpg" alt="Cat"
+                                class="petImage">
+                        </div>
+                        <div class="petCardContent">
+                            <h2 class="petCardTitle">
+                                Appa <i class="fas fa-mars genderMaleIcon"></i>
+                            </h2>
+                            <p class="petCardDescriptionAge">
+                                1 year
+                            </p>
+                            <p class="petCardDescriptionBreed">
+                                Criollo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="petCard">
+                        <div class="petCardImage">
+                            <img src="https://i2.wp.com/i.pinimg.com/originals/41/12/a3/4112a32d08abdac499daabd5a10fc957.jpg" alt="Cat"
+                                class="petImage">
+                        </div>
+                        <div class="petCardContent">
+                            <h2 class="petCardTitle">
+                                Appa <i class="fas fa-mars genderMaleIcon"></i>
+                            </h2>
+                            <p class="petCardDescriptionAge">
+                                1 year
+                            </p>
+                            <p class="petCardDescriptionBreed">
+                                Criollo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
     <script src="../scripts/floatingActionButton.js"></script>
+    <script src="../scripts/pets.js"></script>
+    <script src="https://kit.fontawesome.com/646e009a51.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
