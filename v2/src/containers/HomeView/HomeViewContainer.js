@@ -1,25 +1,12 @@
 import React from "react";
 import "./homepage.css";
 import ExpandibleCard from '../../components/expandCard'
-import { homeViewConstants } from "../../constants";
+import { homeViewConstants, WavesElement } from "../../constants";
 
 const HomeContainerView = () => {
  
 
-  const WavesElement = [
-    <svg className="waveDown3" viewBox="0 0 500 150" preserveAspectRatio="none">
-      <path
-        d="M501.41,76.47 C454.57,72.53 488.42,140.63 430.30,150.48 L501.41,150.48 L501.41,87.33 Z"
-        style={{ fill: "#ff9786" }}
-      ></path>
-    </svg>,
-    <svg className="waveDown4" viewBox="0 0 500 150" preserveAspectRatio="none">
-      <path
-        d="M501.41,114.95 C464.73,113.97 429.17,112.00 402.09,150.48 L500.00,150.00 L500.27,116.94 Z"
-        style={{ fill: "#FFDC7C" }}
-      ></path>
-    </svg>,
-  ];
+  
   return (
     <>
       <main className="mainContainer">
@@ -48,7 +35,7 @@ const HomeContainerView = () => {
         </p>
         <div id="main">
             {
-                homeViewConstants.requirements.map(item=>(<ExpandibleCard {...item} />))
+                homeViewConstants.requirements.map(item=>(<ExpandibleCard key={item.id} {...item} />))
             }
         </div>
       </section>
