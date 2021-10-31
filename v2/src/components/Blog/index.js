@@ -13,7 +13,7 @@ const Blog = ({blog,setCurrentBlog}) => {
                 </p>
                 <button onClick={()=>setCurrentBlog(blog.description)} className="readmoreButton">Read more...</button>
             </div>
-            <img src={blog.photo} className="images"/>
+            <img src={blog.photo} className="images" alt="Article"/>
     </div>
     )
 }

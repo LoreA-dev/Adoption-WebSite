@@ -8,7 +8,7 @@ const PetsContainerView = ()=>{
         <div id="mainContainer">
             <div id="petsContainer">
                 <div id="petsCardContainer">
-                    {petsView.pets.map(item=><ThumbnailCard {...item}/>)}
+                    {petsView.pets.map((item,index)=><ThumbnailCard key={index} {...item}/>)}
                 </div>
             </div>
         </div>

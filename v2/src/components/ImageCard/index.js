@@ -3,20 +3,20 @@ import React from 'react'
 const ImageThumbnailCard = ({name, breed, age, image})=>{
     const [heartChecked, setSheartChecked] = React.useState(false)
     return (
-        <div class="petCard">
-        <div class="petCardImage">
-            <i onClick={()=>setSheartChecked(!heartChecked)} class="fas fa-heart favoriteIcon" style={{color: heartChecked ? 'pink':'white'}}></i>
+        <div className="petCard">
+        <div className="petCardImage">
+            <i onClick={()=>setSheartChecked(!heartChecked)} className="fas fa-heart favoriteIcon" style={{color: heartChecked ? 'pink':'white'}}></i>
             <img src={image} alt="Cat"
                 className="petImage"/>
         </div>
-        <div class="petCardContent">
-            <h2 class="petCardTitle">
-                {name} <i class="fas fa-venus genderWomanIcon"></i>
+        <div className="petCardContent">
+            <h2 className="petCardTitle">
+                {name} <i className="fas fa-venus genderWomanIcon"></i>
             </h2>
-            <p class="petCardDescriptionAge">
+            <p className="petCardDescriptionAge">
                {age}
             </p>
-            <p class="petCardDescriptionBreed">
+            <p className="petCardDescriptionBreed">
                 {breed}
             </p>
         </div>

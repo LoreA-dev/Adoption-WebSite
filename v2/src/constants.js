@@ -171,35 +171,57 @@ const homeViewConstants = {
       "We try to improve the lives of animals that are in a situation of abuse and / or abandonmet. Relieve their suffering and give them an important place in our society.",
     subtitle: `AnimaLovers we seek, for each of them, responsible, loving homes that fit their needs.`,
     requirements: [{
+        id:1,
         title: "You have to be an adult", 
         text: "It's important to be legal age, because that tells us that the adopter is responsable, and will take care of the animal.", 
         icon: "far fa-id-card"
     }, {
+        id:2,
         title: "Have approved form", 
         text: " Is necessary to know your current condition and environment, knowing if you can take care of the pet. Form has to be approved.", 
         icon: "fas fa-tasks"
     }, {
+        id:3,
         title: "Enough space for the pet", 
         text: "They need space at home where they can go to clear their minds, give them their comfort space.", 
         icon: "fas fa-cat"
     }, {
+        id:4,
         title: "Sterilization commitment", 
         text: " The sterilisation is a requirement for the adoption. Sterilisation reduces the number of animals on the street.", 
         icon: "fas fa-cut", 
     }, {
+        id:5,
         title: "All family in agreement", 
         text: "The pet will be living with your family. It’s a good idea to make sure everyone in the family gets along with the new pet.", 
         icon: "fas fa-users", 
     }, {
+        id:6,
         title: "Signature of the contract", 
         text: "Before the adoption, we need to be sure that you will be able to assume all the conditions for the adoption.", 
         icon: "fas fa-file-contract"
     }]
   };
 
+const WavesElement = [
+    <svg className="waveDown3" viewBox="0 0 500 150" preserveAspectRatio="none">
+        <path
+        d="M501.41,76.47 C454.57,72.53 488.42,140.63 430.30,150.48 L501.41,150.48 L501.41,87.33 Z"
+        style={{ fill: "#ff9786" }}
+        ></path>
+    </svg>,
+    <svg className="waveDown4" viewBox="0 0 500 150" preserveAspectRatio="none">
+        <path
+        d="M501.41,114.95 C464.73,113.97 429.17,112.00 402.09,150.48 L500.00,150.00 L500.27,116.94 Z"
+        style={{ fill: "#FFDC7C" }}
+        ></path>
+    </svg>,
+];
 
 export {
     blogs,
+    WavesElement,
     homeViewConstants, 
     petsView
+
 }
