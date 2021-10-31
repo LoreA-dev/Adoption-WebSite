@@ -14,7 +14,7 @@ app.get('/pets', (req, res) =>{
 })
 
 app.get('/animal-care', (req, res) =>{
-    res.sendFile(path.join(__dirname,'/public/views/blogs.html'))
+    res.sendFile(path.join(__dirname,'/public/views/animal-care.html'))
 })
 
 app.listen(app.get('port'),()=>{
