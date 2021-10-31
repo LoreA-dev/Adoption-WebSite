@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, withRouter } from "react-router-dom";
 import HomeContainerView from './containers/HomeView'
 import './App.css';
 import './constants.css'
+import AnimalCareView from './containers/AnimalCareView/index.js';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
           <Route exact path="/home"
             component={HomeContainerView}
           />
-          <Route exact path="/blogs"/>
+          <Route exact path="/animal-care"
+            component={AnimalCareView}/>
           <Route exact path="/pets"/>
           {/* Aqui el codigo de lo demas */}
         </div>
