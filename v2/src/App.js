@@ -5,6 +5,7 @@ import HomeContainerView from './containers/HomeView'
 import PetsContainerView from './containers/PetsView'
 import './App.css';
 import './constants.css'
+import AnimalCareView from './containers/AnimalCareView/index.js';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
           <Route exact path="/home"
             component={HomeContainerView}
           />
-          <Route exact path="/blogs"/>
           <Route exact path="/pets" component={PetsContainerView}/>
+          <Route exact path="/animal-care"
+            component={AnimalCareView}/>
           {/* Aqui el codigo de lo demas */}
         </div>
       </Router>

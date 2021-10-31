@@ -8,12 +8,12 @@ const ExpandCard = (props) => {
     } = props
 
     return ( 
-        <div class="requirement">
-            <div class="textRequierementContainer">
-            <i class={icon}></i>
+        <div className="requirement">
+            <div className="textRequierementContainer">
+            <i className={icon}></i>
             <p id="textInsideRequirements">{title}</p>
             </div>
-            <div class="textFullRequirements">
+            <div className="textFullRequirements">
             <p>
                 {text}
             </p>
