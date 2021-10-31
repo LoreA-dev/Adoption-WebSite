@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Fragment} from "react";
 import "./homepage.css";
 import ExpandibleCard from '../../components/expandCard'
 import { homeViewConstants, WavesElement } from "../../constants";
@@ -27,7 +27,7 @@ const HomeContainerView = () => {
             Let's adopt <i className="fas fa-paw"></i>
           </a>
         </div>
-        {WavesElement}
+        {WavesElement.map((wave,index)=><Fragment key={index}>{wave}</Fragment>)}
       </main>
       <section id="requirementsContainer">
         <p id="requirementsTitle">
@@ -35,7 +35,7 @@ const HomeContainerView = () => {
         </p>
         <div id="main">
             {
-                homeViewConstants.requirements.map(item=>(<ExpandibleCard key={item.id} {...item} />))
+              homeViewConstants.requirements.map(item=>(<ExpandibleCard key={item.id} {...item} />))
             }
         </div>
       </section>

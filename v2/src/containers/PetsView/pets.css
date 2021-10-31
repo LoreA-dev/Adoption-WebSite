@@ -3,7 +3,6 @@
     --colorGenderMale: #7dc2fa;
 }
 #petsContainer {
-    border:  2px solid #c8c8c8;
     display: grid;
     grid-template-rows: 150px 1fr;
     grid-template-areas: "petCardContent";
