@@ -55,7 +55,7 @@ span{
     color:var(--primaryTextColor);
     text-decoration: none;
     transition:.3s opacity ease;
-    font-weight: bold;
+    font-weight: 600;
 }
 .link:hover{
     opacity:.8;
