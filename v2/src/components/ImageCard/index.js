@@ -5,7 +5,7 @@ const ImageThumbnailCard = ({name, breed, age, image})=>{
     return (
         <div className="petCard">
         <div className="petCardImage">
-            <i onClick={()=>setSheartChecked(!heartChecked)} className="fas fa-heart favoriteIcon" style={{color: heartChecked ? 'pink':'white'}}></i>
+            <i onClick={()=>setSheartChecked(!heartChecked)} className="fas fa-heart favoriteIcon" style={{color: heartChecked ? '#f5588a':'white'}}></i>
             <img src={image} alt="Cat"
                 className="petImage"/>
         </div>

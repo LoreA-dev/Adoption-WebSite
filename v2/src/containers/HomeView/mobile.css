@@ -1,0 +1,59 @@
+@media (max-width: 500px){
+    header{
+        padding: 10px;
+    }
+    nav{
+        margin-left: 0;
+    }
+    .link{
+        font-size: 1.7rem;
+    }
+    .imageContainer{
+       display: none;
+    }
+    .btn{
+        font-size: 2rem;
+        margin-top: 1rem;
+        width:250px;
+        padding:.1rem 0 ;
+        height: 50px;
+    }
+    .btn i {
+        font-size: 2.5rem;
+        margin-left: 1.5rem;
+    }
+    .contentContainer{
+        padding: 30px;
+        align-content: inherit;
+    }
+    #textContent h3{
+        font-size: 3rem;
+    }
+    #textContent p{
+        font-size: 2rem;
+        margin-top: 8px;
+    }
+    .imageContainer img{
+        display: none;
+    }  
+    #requirementsTitle{
+        font-size: 2rem;
+        padding: 10px;
+        align-self: center;
+        margin: 8px;
+    }
+    #requirementsContainer{
+        margin: 0;
+    }
+    .requirement {
+        width: 280px;
+        padding: 10px;
+        font-size: 1.8rem;
+    }
+    #main{
+        margin-top: 5px;
+        grid-template-columns: 1fr;
+        grid-gap: 2.5rem;
+        grid-template-rows: 1fr;
+    }
+}
