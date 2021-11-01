@@ -1,7 +1,4 @@
 @media (max-width: 500px){
-    .waveDown3, .waveDown4, .waveUp1, .waveUp2{
-        display: none;
-    }
     header{
         padding: 10px;
     }
@@ -10,10 +7,6 @@
     }
     .link{
         font-size: 1.7rem;
-        color: black;
-    }
-    .link .logo{
-        filter: invert(1);
     }
     .imageContainer{
        display: none;
