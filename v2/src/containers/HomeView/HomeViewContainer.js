@@ -1,5 +1,6 @@
 import React from "react";
 import "./homepage.css";
+import "./mobile.css";
 import ExpandibleCard from '../../components/expandCard'
 import { homeViewConstants } from "../../constants";
 
