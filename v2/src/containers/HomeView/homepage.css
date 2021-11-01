@@ -83,8 +83,7 @@
     grid-gap: .5rem;
     grid-template-rows: 110px 110px;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 #requirementsTitle{
     color: var(--baseColor);
