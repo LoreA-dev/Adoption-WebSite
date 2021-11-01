@@ -139,13 +139,13 @@
 #textInsideRequirements{
     padding: 5px;
 }
-.waveDown3{
-    position: var(--position);
-    z-index: var(--z-index-first);
-    bottom: var(--bottom);
+@media screen and (max-width:600px) {
+    .mainContainer{
+        background-size:200rem 30rem,180rem 20rem;
+    }
 }
-.waveDown4{
-    position: var(--position);
-    z-index: var(--z-index-second);
-    bottom: var(--bottom);
+@media screen and (max-width:500px) {
+    .mainContainer{
+        background-size: 155rem 20rem , 135rem 20rem;
+    }
 }
