@@ -1,10 +1,12 @@
-
+body{
+    background-image: url('../../assets/wave-top-left.svg'), url('../../assets/wave-top-right.svg');
+    background-size: 200rem 40rem , 180rem 30rem;
+    background-position: top left, top left;
+    background-repeat: no-repeat;
+}
 header{
     width: 100%;
-    background: transparent;
     transition:box-shadow 0.5s ease;
-    top:0; 
-    position:relative;
 }
 .shadow{
     box-shadow: 0px 0px 6px 1px black;
@@ -59,16 +61,21 @@ span{
 .link:hover ~ span{
     background:  var(--secondaryColor);
 }
-.waveUp1{
-    position: absolute;
-    top: -5%;
-    left: 0;
-    width: 120%;
-    z-index: -1;
+
+@media screen and (max-width:400px) {
+    .link{
+       font-size: 1.6rem;
+    }
 }
-.waveUp2{
-    width: 110%;
-    position: absolute;
-    left: 0;
-    z-index: -2;
+
+@media screen and (max-width:600px) {
+    body{
+        background-size: 180rem 40rem , 160rem 25rem;
+    }
 }
+@media screen and (max-width:500px) {
+    body{
+        background-size: 155rem 40rem , 135rem 25rem;
+    }
+}
+
