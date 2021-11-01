@@ -1,0 +1,81 @@
+body{
+    background-image: url('../../assets/wave-top-left.svg'), url('../../assets/wave-top-right.svg');
+    background-size: 200rem 40rem , 180rem 30rem;
+    background-position: top left, top left;
+    background-repeat: no-repeat;
+}
+header{
+    width: 100%;
+    transition:box-shadow 0.5s ease;
+}
+.shadow{
+    box-shadow: 0px 0px 6px 1px black;
+}
+.logoContainer{
+    display:flex;
+    align-items:center;
+}
+.logo{
+    width:4rem;
+    color:var(--primaryTextColor);
+}
+nav{
+    margin-left: 3rem;
+}
+.navigationBar{
+    width:95%;
+    height:6rem;
+    margin:auto;
+    display:flex;
+    align-items:center;
+}
+
+.linkContainer{
+    display:inline-block;
+    padding: 0em .5em 0em .6em;
+    margin-left: 2rem;
+
+}
+span{
+    display: block;
+    margin:auto;
+    width:1rem;
+    height:.4rem;
+    background:  transparent;
+    transition: background .3s ease;
+    border-radius: 3rem;
+}
+
+
+.link{
+    font-size: 1.9rem;
+    color:var(--primaryTextColor);
+    text-decoration: none;
+    transition:.3s opacity ease;
+    font-weight: bold;
+}
+.link:hover{
+    opacity:.8;
+
+}
+.link:hover ~ span{
+    background:  var(--secondaryColor);
+}
+
+@media screen and (max-width:400px) {
+    .link{
+       font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-size: 180rem 40rem , 160rem 25rem;
+    }
+}
+@media screen and (max-width:500px) {
+    body{
+        background-size: 155rem 40rem , 135rem 25rem;
+    }
+}
+

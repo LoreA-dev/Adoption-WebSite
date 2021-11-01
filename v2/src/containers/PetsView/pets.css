@@ -1,0 +1,82 @@
+:root{
+    --colorGenderFemale: #fa7de1;
+    --colorGenderMale: #7dc2fa;
+}
+#petsContainer {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    grid-template-areas: "petCardContent";
+    height: 550px;
+    margin: 40px 0 0 0;
+    justify-items: center;
+    position: relative;
+    padding: 10px;
+}
+#petsCardContainer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: .5rem;
+    grid-template-rows: 265px 110px;
+    justify-content: center;
+}
+.petCard {
+  display: inline-block;
+  width: 200px;
+  height: 250px;
+  box-shadow: 0 0 2px 2px rgb(219, 217, 217);
+  border-radius: 8px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.favoriteIcon{
+    font-size: 2.8rem;
+    color: white;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 160px;
+    cursor: pointer;
+}
+.petCardImage {
+  height: 160px;
+}
+.petCardImage img {
+    z-index: 1;
+    border-radius: 8px;
+    height: 190px;
+}
+.petImage {
+  width: 100%;
+  height: 100%;
+}
+.petCardContent {
+  z-index: 1;
+  height: 70px;
+  position: relative;
+  top: 20px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: white;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.petCardContent h2 {
+    font-weight: inherit;
+    color: var(--primaryColor);
+}
+.genderWomanIcon{
+    /* color: #7dc2fa; */
+    color: var(--colorGenderFemale);
+}
+.genderMaleIcon{
+    color: var(--colorGenderMale);
+}
+.petCardDescriptionAge::after {
+  content: "|";
+}
+.petCardContent p {
+  display: inline-block;
+}
+.selected{
+    color: red;
+}
